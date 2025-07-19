@@ -120,6 +120,3 @@ for line in lines[1:]:
 - [Pandas 공식 문서](https://pandas.pydata.org/docs/)
 - [Matplotlib 공식 문서](https://matplotlib.org/)
 
-## 문의
-
-프로젝트에 대한 질문이나 개선 사항이 있으시면 언제든 연락주세요! 
