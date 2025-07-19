@@ -1,7 +1,6 @@
 # Mogakso_LLM
 
-파이썬 프로그래밍 실습 프로젝트
-
+파란학기 LLM 관련 실습을 통한 준비
 ## 주차별 실습 내용
 
 ### 1주차: Pandas & Matplotlib 데이터 분석
