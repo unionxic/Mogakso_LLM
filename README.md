@@ -22,14 +22,14 @@
   - 로그 파일 분석
   - 웹 서버 로그 처리
 
-### 3주차: AI 모델 실습
+### 3주차: 모델 활용 실습
 - **파일**: 
   - `week3_ai_models_practice.py` (이론 및 예시)
   - `week3_ai_models_hands_on.py` (실제 API 사용)
 - **내용**:
-  - Hugging Face: 이미 만들어진 모델 써보기
-  - OpenAI API: ChatGPT API로 챗봇 만들기
-  - 번역 모델: 한영 번역기 체험
+  - Hugging Face: 사전 훈련된 모델 활용
+  - OpenAI API: 챗봇 구현
+  - 번역: 다국어 변환 기능
   - 감정 분석, 텍스트 요약, 대화형 챗봇
 
 ## 파일 구조
@@ -101,7 +101,7 @@ python week3_ai_models_hands_on.py
 - 웹 서버 로그 처리
 - 텍스트 정보 추출
 
-### 3주차: AI 모델 활용
+### 3주차: 모델 활용
 
 #### Hugging Face 모델
 - 감정 분석: 텍스트의 감정 상태 분류
@@ -155,7 +155,7 @@ for line in lines[1:]:
     data = dict(zip(headers, values))
 ```
 
-### 3주차: AI 모델 활용
+### 3주차: 모델 활용
 ```python
 # OpenAI 챗봇
 import openai

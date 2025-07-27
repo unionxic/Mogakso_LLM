@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-3주차: AI 모델 실습
-- Hugging Face: 이미 만들어진 모델 써보기
-- OpenAI API: ChatGPT API로 챗봇 만들기
-- 번역 모델: 한영 번역기 체험
+3주차: 모델 활용 실습
+- Hugging Face: 사전 훈련된 모델 사용
+- OpenAI API: 챗봇 구현
+- 번역: 다국어 변환
 """
 
 import requests
@@ -13,26 +13,26 @@ import os
 from typing import Dict, List, Optional
 
 def section_1_huggingface_models():
-    """1. Hugging Face 모델 사용하기"""
+    """1. Hugging Face 모델 활용"""
     print("=" * 50)
-    print("1. Hugging Face 모델 사용하기")
+    print("1. Hugging Face 모델 활용")
     print("=" * 50)
     
     print("Hugging Face는 다양한 사전 훈련된 모델을 제공합니다.")
-    print("주요 모델 타입:")
+    print("주요 모델 종류:")
     print("- 텍스트 분류 (감정 분석, 스팸 탐지)")
     print("- 텍스트 생성 (GPT, BERT)")
     print("- 번역 (다국어 번역)")
     print("- 이미지 분류 (Vision Transformer)")
     print("- 음성 인식 (Whisper)")
     
-    print("\n사용 예시:")
-    print("1. 감정 분석 모델")
-    print("2. 텍스트 요약 모델")
-    print("3. 이미지 분류 모델")
+    print("\n활용 예시:")
+    print("1. 감정 분석")
+    print("2. 텍스트 요약")
+    print("3. 이미지 분류")
     
-    # 실제 API 호출 예시 (API 키가 필요한 경우)
-    print("\nHugging Face API 사용 예시:")
+    # API 호출 예시
+    print("\nHugging Face API 활용 예시:")
     print("""
     import requests
     
@@ -50,12 +50,12 @@ def section_1_huggingface_models():
     """)
 
 def section_2_openai_chatbot():
-    """2. OpenAI API로 챗봇 만들기"""
+    """2. OpenAI API 챗봇 구현"""
     print("\n" + "=" * 50)
-    print("2. OpenAI API로 챗봇 만들기")
+    print("2. OpenAI API 챗봇 구현")
     print("=" * 50)
     
-    print("OpenAI API를 사용하여 ChatGPT 기반 챗봇을 만들 수 있습니다.")
+    print("OpenAI API를 활용하여 대화형 챗봇을 구현할 수 있습니다.")
     
     # 간단한 챗봇 클래스
     class SimpleChatbot:
@@ -104,9 +104,9 @@ def section_2_openai_chatbot():
             """대화 기록 초기화"""
             self.conversation_history = []
     
-    print("\n챗봇 클래스 예시:")
+    print("\n챗봇 구현 예시:")
     print("""
-    # API 키 설정 (실제 사용시 환경변수에서 가져오기)
+    # API 키 설정
     api_key = "your-openai-api-key"
     chatbot = SimpleChatbot(api_key)
     
@@ -128,12 +128,12 @@ def section_2_openai_chatbot():
     print("챗봇: 천만에요! 다른 질문이 있으시면 언제든 물어보세요.")
 
 def section_3_translation_model():
-    """3. 번역 모델 체험"""
+    """3. 번역 기능 구현"""
     print("\n" + "=" * 50)
-    print("3. 번역 모델 체험")
+    print("3. 번역 기능 구현")
     print("=" * 50)
     
-    print("다양한 번역 모델을 사용하여 한영 번역을 체험해보겠습니다.")
+    print("다양한 번역 모델을 활용하여 한영 번역 기능을 구현해보겠습니다.")
     
     # 번역 클래스
     class TranslationModel:
@@ -187,7 +187,7 @@ def section_3_translation_model():
             
             return translations.get(text, f"[번역 불가] {text}")
     
-    print("\n번역 모델 사용 예시:")
+    print("\n번역 기능 활용 예시:")
     translator = TranslationModel()
     
     # 한영 번역 예시
@@ -217,9 +217,9 @@ def section_3_translation_model():
         print(f"'{text}' -> '{translation}'")
 
 def section_4_practical_examples():
-    """4. 실전 예제"""
+    """4. 실제 활용 예제"""
     print("\n" + "=" * 50)
-    print("4. 실전 예제")
+    print("4. 실제 활용 예제")
     print("=" * 50)
     
     print("실제 프로젝트에서 활용할 수 있는 예제들:")
@@ -228,14 +228,14 @@ def section_4_practical_examples():
     print("\n1. 감정 분석 시스템")
     print("""
     def analyze_sentiment(text: str) -> Dict[str, float]:
-        # Hugging Face 감정 분석 모델 사용
+        # Hugging Face 감정 분석 활용
         API_URL = "https://api-inference.huggingface.co/models/cardiffnlp/twitter-roberta-base-sentiment-latest"
         headers = {"Authorization": "Bearer YOUR_API_KEY"}
         
         response = requests.post(API_URL, headers=headers, json={"inputs": text})
         return response.json()
     
-    # 사용 예시
+    # 활용 예시
     sentiment = analyze_sentiment("I love this product!")
     print(sentiment)  # {'label': 'POSITIVE', 'score': 0.95}
     """)
@@ -244,7 +244,7 @@ def section_4_practical_examples():
     print("\n2. 문서 요약 시스템")
     print("""
     def summarize_text(text: str) -> str:
-        # OpenAI API를 사용한 텍스트 요약
+        # OpenAI API를 활용한 텍스트 요약
         prompt = f"다음 텍스트를 간단히 요약해주세요:\\n\\n{text}"
         
         response = openai.ChatCompletion.create(
@@ -322,7 +322,7 @@ def section_5_setup_instructions():
 
 def main():
     """메인 함수"""
-    print("3주차: AI 모델 실습")
+    print("3주차: 모델 활용 실습")
     print("학부생 3,4학년 수준")
     
     section_1_huggingface_models()

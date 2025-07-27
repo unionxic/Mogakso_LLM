@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-3주차: AI 모델 실습 - 실제 API 사용
-실제 API 키를 사용하여 AI 모델을 체험해보세요.
+3주차: 모델 활용 실습 - 실제 API 사용
+실제 API 키를 사용하여 모델을 체험해보세요.
 """
 
 import os
@@ -317,7 +317,7 @@ def interactive_chat():
 
 def main():
     """메인 함수"""
-    print("3주차: AI 모델 실습 - 실제 API 사용")
+    print("3주차: 모델 활용 실습 - 실제 API 사용")
     print("학부생 3,4학년 수준")
     
     check_api_keys()
